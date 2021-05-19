@@ -376,7 +376,7 @@ void saveStashList(Unit* ptChar, Stash* ptStash, BYTE** data, DWORD* maxSize, DW
 
 	while(ptStash)
 	{
-		if (*curSize + 0x2000 > *maxSize)
+		if (*curSize + 0xF000 > *maxSize)
 		{
 			BYTE* oldData = *data;
 			*maxSize *= 2;
